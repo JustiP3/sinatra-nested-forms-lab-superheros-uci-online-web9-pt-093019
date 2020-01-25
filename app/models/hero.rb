@@ -7,6 +7,7 @@ class Hero
     @power = power
     @bio = bio
     @@all << self
+    self
   end
 
   def self.all
