@@ -14,7 +14,7 @@ class App < Sinatra::Base
         name = member[:name]
         power = [:power]
         bio = [:bio]
-        binding.pry 
+        binding.pry
         Hero.new(name, power, bio)
       end
 
