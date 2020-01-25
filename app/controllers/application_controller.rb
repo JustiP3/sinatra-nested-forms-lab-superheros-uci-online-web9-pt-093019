@@ -16,6 +16,7 @@ class App < Sinatra::Base
         bio = [:bio]
         Hero.new(name, power, bio)
       end
+      binding.pry
       @heores = Hero.all
       erb :team
     end
