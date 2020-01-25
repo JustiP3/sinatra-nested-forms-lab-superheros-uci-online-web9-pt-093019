@@ -19,12 +19,4 @@ class App < Sinatra::Base
       erb :team
     end
 
-    <h1><%= @params[:team][:name] %></h1>
-    <h3><%= @params[:team][:motto] %></h3>
-    <% @params[:team][:members].each do |member| %>
-    <h2>Hero Name: <%= member[:name] %></h2>
-    <p>Hero Name: <%= member[:power] %></p>
-    <p>Hero Biography: <= member[:bio]</p>
-    <% end %>
-
 end
